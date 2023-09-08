@@ -4,6 +4,7 @@
 .navbar{
   padding: 60px 0px 60px 0px;
   display: flex;
+  margin-left: 100px;
   justify-content: space-evenly;
 }
 .logo{
@@ -16,6 +17,7 @@ a{
 }
 .menuLista{
   display: flex;
+  margin: 0px 120px 0px 120px;
   justify-content: center;
 }
 .menuLista li{
@@ -45,7 +47,9 @@ a{
 .btnContact:hover{
   background:#1f5e6e ;
 }
-
+.btnMenuHambur{
+  display: none;
+}
 .hero{
   display: grid;
   justify-content: center;
@@ -294,7 +298,8 @@ a{
 }
 .menuFooter{
   display: flex;
-  width: 25%;
+  width: 50%;
+  gap: 200px;
   color: #fff;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: 16px;
@@ -307,23 +312,8 @@ a{
 .menuFooter li{
   margin: 20px;
 }
-.menuFooter2{
-  width: 25%;
-  display: flex;
-  color: #FFF;
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: 16px;
-  line-height: normal;
-  align-items: center;
-}
-.menuFooter2 ul{
-  justify-content: center;
-}
-.menuFooter2 li:nth-child(1){
-  margin-top:-17px;
-}
-.menuFooter2 li{
-  margin: 20px;
+.columna2{
+  margin-bottom: 40px;
 }
 .form{
   display: grid;
@@ -368,30 +358,186 @@ a{
   font-style: normal;
   text-align: right;
   font-weight: 500;
-  line-height: normal;
-}
-/* .navbar{
   display: flex;
-  margin: 30px;
-  justify-content: space-between;
+  line-height: normal;
+  justify-content: right;
 }
-.menu{
-  width: 30px;
-}
-.logo{
-  width: 100px;
-}
-.imgHero{
-  padding: 40px;
-  justify-content: center;
-  width: 400px;
-}
-.heroTitulo{
-  font-family: Be Vietnam;
-  font-size: 50px;
-  font-style: normal;
-  text-align: right;
-  color: #232C50;
-  letter-spacing: -1.75px;
 
-} */
+@media (max-width:480px) {
+  .navbar{
+    width: 370px;
+    gap: 260px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuLista{
+    display: none;
+  }
+  .btnContact{
+    display: none;
+  }
+  .btnMenuHambur{
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+  .heroContainer{
+    width: 400px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 0px;
+  }
+  .heroIzquierdo{
+    width: 400px;
+    height: 340px;
+  }
+  .heroDerecho{
+    margin-top: 80px;
+    width: 400px;
+    height: 400px;
+  }
+  .heroDerecho p{
+    margin-bottom: 30px;
+  }
+  .sectionMorada{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    gap: 50px;
+    background-color: #3CDDF3;;
+  }
+  .sectionMorada h2{
+    width: 250px;
+  }
+  .cardsMoradas{
+    width: 100%;
+    padding: 0px;
+    margin-top: 50px;
+  }
+  .numero{
+    margin-left: 37px;
+    position: relative;
+  }
+  .cardsNumeros{
+    margin-top: 30px;
+    padding: 0px;
+  }
+  .tituloCardNum{
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    font-size: 15px;
+    padding-left: 50px;
+    background-color:#e4d2f4;
+    height: 40px;
+  }
+  .tituloNumero{
+    padding: 0px;
+  }
+  .textoCardNum{
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 16px;
+    position: relative;
+    right: 30px;
+    letter-spacing: 0.3px;
+
+  }
+  .tituloMonth{
+    margin: 250px 0px 0px 0px;
+    justify-content: start;
+  }
+  .cardsMonth:nth-child(1n+2){
+    display: none;
+  }
+  .cardsMonth{
+    margin-top: 100px;
+  }
+  .sectionMorada2{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    background: #3CDDF3;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .sectionMorada2 h2{
+    text-align: center;
+    }
+  .btnGo{
+    background-color: #232C50;
+    color: #FFF;
+  }
+  .line::before,
+  .line::after {
+  content: "";
+  display: block;
+  width: 0;
+  }
+  .footer{
+    width: 480px;
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #1E1E26;    
+  }
+  .footer ul{
+    align-items: center;
+    justify-content: center;
+  }
+  .menuFooter{
+    display: flex;
+    width: 480px;  
+    gap: 90px;
+    margin-bottom: 40px;
+  }
+  .columna2{
+    position: relative;
+    bottom: 20px;
+  }
+  .menuFooter li {
+    margin-bottom: 10px;  
+  }
+  .form{
+    justify-content: center;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+  }
+  .inputEmail{
+    display: grid;
+    width: 300px;
+    justify-content: center;
+  }
+  .copy{
+    position: relative;
+    top: 360px; 
+  }
+  .iconos{
+    width: 480px;
+    display:flex ;
+    flex-direction: column-reverse;
+    margin: 0px;
+    justify-content: center;
+  }
+  .iconos div img{
+    margin-left: 50px;
+    justify-content: center;
+  }
+  .iconos div img:nth-child(1){
+    margin-left: 0px;
+  }
+  .iconos img{
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+}
